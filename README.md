@@ -1,7 +1,7 @@
 ## iTunesToTrakt
 Applescript for marking your latest seen TV shows and movies in iTunes as seen on Trakt. 
 
-I use iTunes to watch my favorite TV shows, and I wanted to automatically mark seen episodes on <trakt.tv> so I wrote this applescript to get that done. 
+I use iTunes to watch my favorite TV shows, and I wanted to automatically mark seen episodes on <http://trakt.tv> so I wrote this applescript to get that done. 
 
 I'm no Applescript guru but it works for me.
 
@@ -15,4 +15,4 @@ It need 4 arguments, in the correct order
 - sha1 of your trakt.tv password 
 
 example:
-osascript iTunesToTrakt.applescript 1 apikey username sha1password
+`osascript iTunesToTrakt.applescript 1 apikey username sha1password`

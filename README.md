@@ -5,14 +5,12 @@ I use iTunes to watch my favorite TV shows, and I wanted to automatically mark s
 
 I'm no Applescript guru but it works for me.
 
+### Installation:
+* First you need to create an app over at trakt.tv: https://trakt.tv/oauth/applications
+* `cp .env.example .env`
+* Edit `.env` with your credentials
+* Run `osascript -l JavaScript iTunesToTrakt.applescript` to create token
+* It will ask you to open an url in your browser and copy the shown pin code into the promp
+
 ### Usage:
-I made it as a command line script so I can put it in crontab to run every hour. 
-It need 4 arguments, in the correct order 
-
-- number of hours from now to search for (last played date in iTunes) 
-- your trakt.tv apikey 
-- your trakt.tv username 
-- sha1 of your trakt.tv password 
-
-example:
-`osascript iTunesToTrakt.applescript 1 apikey username sha1password`
+`osascript -l JavaScript iTunesToTrakt.applescript`
